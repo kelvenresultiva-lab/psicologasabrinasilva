@@ -39,6 +39,33 @@ function renderPostPage(post) {
 
   return `<!DOCTYPE html>
 <html lang="pt-BR"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18464763193"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18464763193');
+</script>
+<!-- Conversão: Contato WhatsApp -->
+<script>
+function gtag_report_conversion(url) {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18464763193/OcNyCODt4pkdELna1-RE',
+    'value': 1.0,
+    'currency': 'BRL'
+  });
+
+  // abre em nova aba (os links do site já eram target="_blank"); a página
+  // continua aberta, então o evento é enviado normalmente
+  if (typeof(url) != 'undefined') {
+    window.open(url, '_blank', 'noopener');
+  }
+
+  return false;
+}
+</script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="index, follow" name="robots"/>
@@ -68,7 +95,7 @@ ${cover}
 <div class="sb-post-content">${post.contentHtml || ''}</div>
 <div class="sb-post-cta">
 <p>Quer conversar sobre o que leu aqui?</p>
-<a class="sb-post-cta-btn" href="https://api.whatsapp.com/send?phone=553195591650&text=Ol%C3%A1%2C%20li%20o%20artigo%20%22${encodeURIComponent(post.title)}%22%20no%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" rel="noopener">Falar no WhatsApp</a>
+<a class="sb-post-cta-btn" href="https://api.whatsapp.com/send?phone=553195591650&text=Ol%C3%A1%2C%20li%20o%20artigo%20%22${encodeURIComponent(post.title)}%22%20no%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">Falar no WhatsApp</a>
 </div>
 </article>
 </main>
