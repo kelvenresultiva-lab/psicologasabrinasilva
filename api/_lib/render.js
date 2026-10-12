@@ -95,7 +95,7 @@ ${cover}
 <div class="sb-post-content">${post.contentHtml || ''}</div>
 <div class="sb-post-cta">
 <p>Quer conversar sobre o que leu aqui?</p>
-<a class="sb-post-cta-btn" href="https://api.whatsapp.com/send?phone=553195591650&text=Ol%C3%A1%2C%20li%20o%20artigo%20%22${encodeURIComponent(post.title)}%22%20no%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">Falar no WhatsApp</a>
+<a class="sb-post-cta-btn" href="https://api.whatsapp.com/send?phone=553195591650&text=Ol%C3%A1%2C%20li%20o%20artigo%20%22${encodeURIComponent(post.title)}%22%20no%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">Entrar em contato</a>
 </div>
 </article>
 </main>
