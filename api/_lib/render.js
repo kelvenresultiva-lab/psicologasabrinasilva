@@ -100,7 +100,7 @@ ${cover}
 </article>
 </main>
 <footer class="sb-blog-footer">
-<p>© Copyright 2026. Todos os direitos reservados.</p>
+<p>© Copyright 2026. Todos os direitos reservados. — CRP 04/74753</p>
 <p>Página desenvolvida por <strong>Resultiva</strong></p>
 </footer>
 </body></html>`;
